@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>TwitterGraph</title>
+
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js"></script>
+		<script>!window.jQuery && document.write('<script src="www/js/jquery.js"><\/script>')</script>
+		<script>!window.jQuery.ui && document.write('<script src="www/js/jquery-ui.js"><\/script>')</script>
+
+		<script src="js/script.js"></script>
+
+	</head>
+	<body>
+		<div id="wordmark">
+		</div>
+		<div id="container">
+
+			<div id="header">
+				<h1>Twitter Graph</h1>	
+			</div>
+
+			<div id="main">
+				<form action="twitter.php" method="get">
+					<p>
+					<label for="title">Title</label>
+					<input type="text" name="title" value="National League Favorite">
+					</p>
+					<p>
+					<label for="q">Search Terms</label>
+					<input type="text" name="q" value="baseball">
+					</p>
+					<dl>
+						<dt>label / key terms</dt>
+						<dd>
+						<input type="text" name="labels[]" value="Giants"> / <input value="giants francisco sanfran" type="text" name="terms[]">
+						</dd>
+						<dt>label / key terms</dt>
+						<dd>
+						<input type="text" name="labels[]" value="Phillies"> / <input value="phillies philadelphia philly" type="text" name="terms[]">
+						</dd>
+						<dt>label / key terms</dt>
+						<dd>
+						<input type="text" name="labels[]"> / <input type="text" name="terms[]">
+						</dd>
+						<dt>label / key terms</dt>
+						<dd>
+						<input type="text" name="labels[]"> / <input type="text" name="terms[]">
+						</dd>
+						<dt>label / key terms</dt>
+						<dd>
+						<input type="text" name="labels[]"> / <input type="text" name="terms[]">
+						</dd>
+					</dl>
+					<input type="submit" value="get results">
+				</form>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="footer">
+			</div>
+
+		</div>
+	</body>
+</html>
